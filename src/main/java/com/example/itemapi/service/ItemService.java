@@ -1,6 +1,6 @@
 package com.example.itemapi.service;
 
-import jakarta.annotation.PostConstruct;
+
 
 import com.example.itemapi.model.Item;
 import org.springframework.stereotype.Service;
@@ -31,11 +31,6 @@ public class ItemService {
         return items;
     }
 
-    @PostConstruct
-public void init() {
-    items.add(new Item(01, "Movie_name1", "Movie_description1"));
-    items.add(new Item(02, "Movie_name2", "Movie_description2"));
-}
 
 }
 
