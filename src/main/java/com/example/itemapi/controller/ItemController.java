@@ -34,5 +34,10 @@ public class ItemController {
     public List<Item> getAllItems() {
         return service.getAllItems();
     }
+    @GetMapping("/")
+public String home() {
+    return "Item API is running successfully!";
+}
+
     
 }
