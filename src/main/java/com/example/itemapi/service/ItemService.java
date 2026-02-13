@@ -28,5 +28,12 @@ public class ItemService {
     public List<Item> getAllItems() {
         return items;
     }
+
+    @PostConstruct
+public void init() {
+    items.add(new Item(1, "Laptop", 50000));
+    items.add(new Item(2, "Phone", 20000));
+}
+
 }
 
